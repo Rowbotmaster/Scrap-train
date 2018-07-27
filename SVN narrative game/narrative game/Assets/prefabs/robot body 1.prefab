@@ -238,8 +238,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166959796162862}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.826, y: 0.0000011030327, z: 12.621}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.8049514, y: 0, z: 21.889091}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 4811998306092268}
@@ -250,7 +250,7 @@ Transform:
   - {fileID: 4070164839698364}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4650871973029618
 Transform:
   m_ObjectHideFlags: 1
@@ -638,7 +638,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.30449829, g: 0.88848585, b: 0.9411765, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5d1f8bd181c1a46a4b419f6e8affe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sparks: {fileID: 0}
+  sparks: {fileID: 1836658607214934}
   parts: {fileID: 1706685935827198}
   eyeLightWhite: {fileID: 1753448234360650}
   eyeLightRed: {fileID: 1419355677537416}

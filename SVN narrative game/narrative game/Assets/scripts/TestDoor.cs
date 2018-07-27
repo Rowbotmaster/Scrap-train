@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TestDoor : MonoBehaviour {
 
-    public GameObject door;
+    public GameObject door1;
+    public GameObject door2;
     public int currentParts = 0;
 
     private int requiredParts = 3;
@@ -24,7 +25,8 @@ public class TestDoor : MonoBehaviour {
         {
             if (currentParts <= requiredParts)
             {
-                door.SetActive(false);
+                door1.SetActive(false);
+                door2.SetActive(false);
             }
             
         }
