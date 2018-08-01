@@ -5,10 +5,11 @@ using UnityEngine;
 public class TestSparks : MonoBehaviour {
 
     public GameObject sparks;
+    public GameObject clunk;
     public GameObject parts;
     public GameObject eyeLightWhite;
     public GameObject eyeLightRed;
-    private bool inPosition;
+    private bool inPosition = false;
 
     // Use this for initialization
     void Start () {
@@ -21,11 +22,13 @@ public class TestSparks : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && inPosition == true)
         {
             sparks.SetActive(false);
+            clunk.SetActive(true);
             parts.SetActive(false);
             eyeLightWhite.SetActive(false);
             eyeLightRed.SetActive(true);
 
             GameObject.Find("FPS_Player").GetComponent<PlayerEnergy>().parts++;
+			GameObject.Find("FPS_Player").GetComponent<PlayerEnergy>().energy += 20;
         }
     }
 

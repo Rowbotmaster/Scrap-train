@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerEnergy : MonoBehaviour {
 
-    public float energy = 100;
+    public float energy = 30;
     public int parts;
 
     public Text energyText;
@@ -25,6 +26,11 @@ public class PlayerEnergy : MonoBehaviour {
     {
         energy -= 1 * Time.fixedDeltaTime;
         energyText.text = "power " + energy;
+
+		if (energy <= 0) 
+		{
+			Application.LoadLevel ("Main");
+		}
     }
 
     void OnTriggerEnter(Collider other)
