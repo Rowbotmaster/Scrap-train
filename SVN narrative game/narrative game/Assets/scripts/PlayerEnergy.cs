@@ -12,10 +12,12 @@ public class PlayerEnergy : MonoBehaviour {
     public Text energyText;
     public Text interactText;
 
+    public GameObject backing;
+
     // Use this for initialization
     void Start () {
-		
-	}
+        backing.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -35,19 +37,23 @@ public class PlayerEnergy : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        
         if (other.tag == "Spark")
         {
+            backing.SetActive(true);
             interactText.text = "SPACE take parts and recharge";
         }
 
         if (other.tag == "Door")
         {
+            backing.SetActive(true);
             GameObject.Find("door trigger").GetComponent<TestDoor>().currentParts = parts;
         }
     }
 
     void OnTriggerExit(Collider other)
     {
+        backing.SetActive(false);
         if (other.tag == "Spark")
         {
             interactText.text = "";

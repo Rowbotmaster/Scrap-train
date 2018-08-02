@@ -405,6 +405,7 @@ public class FPS_Player : MonoBehaviour
     {
         // Maintain Cursor lock
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         // Update character pose
         PoseUpdate(a_fDeltaTime);
         // Mouse look - if not manipulating physics
