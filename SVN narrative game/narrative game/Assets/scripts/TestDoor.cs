@@ -29,12 +29,12 @@ public class TestDoor : MonoBehaviour {
             {
                 door1.SetActive(false);
                 door2.SetActive(false);
+                interactText.text = "the parts are just enough to make the door open";
             }
             else
             {
                 interactText.text = "More spare parts are required";
             }
-            
         }
     }
 

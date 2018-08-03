@@ -47,7 +47,6 @@ public class PlayerEnergy : MonoBehaviour {
         if (other.tag == "Door")
         {
             backing.SetActive(true);
-            GameObject.Find("door trigger").GetComponent<TestDoor>().currentParts = parts;
         }
     }
 
@@ -57,6 +56,7 @@ public class PlayerEnergy : MonoBehaviour {
         if (other.tag == "Spark")
         {
             interactText.text = "";
+            GameObject.Find("door trigger").GetComponent<TestDoor>().currentParts = parts;
         }
     }
 }
